@@ -1,9 +1,50 @@
 const resources = [
-    // --- FRONTEND ---
+    // --- BASIC KNOWLEDGE (Nền tảng) ---
+    {
+        name: "World Wide Web (WWW)",
+        url: "https://lptech.asia/kien-thuc/www-la-gi-tong-quan-kien-thuc-ve-world-wide-web",
+        desc: "Hệ thống thông tin toàn cầu gồm các trang web được liên kết qua Internet bằng siêu văn bản.",
+        category: "basic knowledge",
+        icon: "fa-solid fa-globe",
+        logoUrl: "assets/internet-www-svgrepo-com.svg",
+    },
+    {
+        name: "Internet",
+        url: "https://lptech.asia/kien-thuc/internet-la-gi-tong-quan-kien-thuc",
+        desc: "Mạng lưới kết nối hàng tỷ thiết bị trên toàn cầu, nền tảng cơ sở để truyền tải thông tin.",
+        category: "basic knowledge",
+        icon: "fa-solid fa-wifi",
+        logoUrl: "assets/wifi-svgrepo-com.svg",
+    },
+    {
+        name: "HTTP/HTTPS",
+        url: "https://lptech.asia/kien-thuc/http-la-gi-tong-quan-kien-thuc",
+        desc: "Giao thức truyền tải siêu văn bản, quy định cách dữ liệu được gửi giữa trình duyệt và server.",
+        category: "basic knowledge",
+        icon: "fa-solid fa-lock",
+        logoUrl: "assets/laptop-http-svgrepo-com.svg",
+    },
+    {
+        name: "API",
+        url: "https://lptech.asia/kien-thuc/api-la-gi-tong-quan-kien-thuc",
+        desc: "Giao diện lập trình ứng dụng, cho phép các phần mềm tương tác và trao đổi dữ liệu với nhau.",
+        category: "basic knowledge",
+        icon: "fa-solid fa-gears",
+        logoUrl: "assets/api-interface-svgrepo-com.svg",
+    },
+    {
+        name: "Computer Components",
+        url: "https://lptech.asia/kien-thuc/computer-components-la-gi-tong-quan-kien-thuc",
+        desc: "Kiến thức về phần cứng: CPU, RAM, Disk... giúp tối ưu hóa hiệu suất khi viết code.",
+        category: "basic knowledge",
+        icon: "fa-solid fa-microchip",
+        logoUrl: "assets/computer-device-hardware-svgrepo-com.svg",
+    },
+   // --- FRONTEND (Giao diện người dùng) ---
     {
         name: "HTML",
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        desc: "Khung xương của mọi trang web.",
+        desc: "Ngôn ngữ đánh dấu siêu văn bản, là 'khung xương' xây dựng nên cấu trúc trang web.",
         category: "frontend",
         icon: "fa-brands fa-html5",
         logoUrl: "assets/html-1.svg"
@@ -11,7 +52,7 @@ const resources = [
     {
         name: "CSS",
         url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        desc: "Trang trí giao diện và bố cục web.",
+        desc: "Ngôn ngữ định kiểu, giúp trang trí giao diện, màu sắc và bố cục (layout) cho website.",
         category: "frontend",
         icon: "fa-brands fa-css3",
         logoUrl: "assets/css-3.svg"
@@ -19,7 +60,7 @@ const resources = [
     {
         name: "JavaScript",
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        desc: "Ngôn ngữ lập trình tạo nên sự tương tác cho web.",
+        desc: "Ngôn ngữ lập trình cốt lõi tạo nên sự tương tác và xử lý logic phía trình duyệt.",
         category: "frontend",
         icon: "fa-brands fa-js",
         logoUrl: "assets/javascript-1.svg"
@@ -27,15 +68,16 @@ const resources = [
     {
         name: "TypeScript",
         url: "https://www.typescriptlang.org/",
-        desc: "Phiên bản nâng cấp của JS với định kiểu tĩnh chặt chẽ.",
+        desc: "Siêu tập của JavaScript, bổ sung kiểu dữ liệu (static typing) giúp giảm thiểu lỗi code.",
         category: "frontend",
         icon: "fa-solid fa-code",
         logoUrl: "assets/typescript-2.svg"
     },
+    // Framework//
     {
         name: "React.js",
         url: "https://react.dev/",
-        desc: "Thư viện UI phổ biến nhất thế giới của Meta.",
+        desc: "Thư viện JavaScript của Meta dùng để xây dựng giao diện người dùng dựa trên Component.",
         category: "frontend",
         icon: "fa-brands fa-react",
         logoUrl: "assets/react-svgrepo-com.svg"
@@ -43,7 +85,7 @@ const resources = [
     {
         name: "Vue.js",
         url: "https://vuejs.org/",
-        desc: "Framework Progressive, dễ tiếp cận và nhẹ.",
+        desc: "Framework linh hoạt, nhẹ và có tài liệu hướng dẫn cực kỳ thân thiện cho người mới.",
         category: "frontend",
         icon: "fa-brands fa-vuejs",
         logoUrl: "assets/vue-svgrepo-com.svg"
@@ -59,7 +101,7 @@ const resources = [
     {
         name: "Tailwind CSS",
         url: "https://tailwindcss.com/",
-        desc: "Viết CSS nhanh chóng thông qua các class tiện ích.",
+        desc: "Utility-first CSS framework giúp thiết kế giao diện cực nhanh bằng các class dựng sẵn.",
         category: "frontend",
         icon: "fa-solid fa-wind",
         logoUrl: "assets/tailwind-css-2.svg"
@@ -72,12 +114,20 @@ const resources = [
         icon: "fa-brands fa-sass",
         logoUrl: "assets/sass-svgrepo-com.svg"
     },
+   {
+        name: "Next.js",
+        url: "https://nextjs.org/",
+        desc: "React Framework hàng đầu hỗ trợ SSR (Server Side Rendering) và tối ưu SEO vượt trội.",
+        category: "frontend",
+        icon: "fa-solid fa-n", 
+        logoUrl: "assets/nextjs-icon-svgrepo-com.svg"
+    },
 
     // --- BACKEND ---
     {
         name: "Java",
         url: "https://www.java.com/",
-        desc: "Ngôn ngữ 'Viết một lần, chạy mọi nơi'.",
+        desc: "Ngôn ngữ hướng đối tượng mạnh mẽ, tiêu chuẩn cho các hệ thống ngân hàng và doanh nghiệp.",
         category: "backend",
         icon: "fa-brands fa-java",
         logoUrl: "assets/java-svgrepo-com.svg"
@@ -85,9 +135,9 @@ const resources = [
     {
         name: "Spring Boot",
         url: "https://spring.io/",
-        desc: "Framework Java số 1 cho Backend hiện nay.",
+        desc: "Hệ sinh thái Java giúp phát triển Microservices và ứng dụng Backend nhanh chóng, bảo mật.",
         category: "backend",
-        icon: "fa-brands fa-java",
+        icon: "fa-solid fa-leaf",
         logoUrl: "assets/spring-boot-1.svg"
     },
     {
@@ -98,10 +148,10 @@ const resources = [
         icon: "fa-brands fa-php",
         logoUrl: "assets/php-programming-language-icon.svg"
     },
-    {
+   {
         name: "Node.js",
         url: "https://nodejs.org/",
-        desc: "Chạy JavaScript ở phía Server với hiệu năng cao.",
+        desc: "Môi trường chạy JavaScript trên máy chủ (Server-side), phù hợp cho ứng dụng thời gian thực.",
         category: "backend",
         icon: "fa-brands fa-node",
         logoUrl: "assets/node-js-svgrepo-com.svg"
@@ -109,7 +159,7 @@ const resources = [
     {
         name: "Python",
         url: "https://www.python.org/",
-        desc: "Ngôn ngữ đa năng: Web, AI, Data Science, Automation.",
+        desc: "Cú pháp đơn giản như tiếng Anh, là lựa chọn số 1 cho AI, Data Science và Backend nhanh.",
         category: "backend",
         icon: "fa-brands fa-python",
         logoUrl: "assets/python-5.svg"
@@ -141,7 +191,7 @@ const resources = [
     {
         name: "Go (Golang)",
         url: "https://go.dev/",
-        desc: "Ngôn ngữ hiện đại của Google, xử lý song song cực tốt.",
+        desc: "Ngôn ngữ của Google, nổi tiếng với khả năng xử lý đồng thời (concurrency) cực cao.",
         category: "backend",
         icon: "fa-brands fa-golang",
         logoUrl: "assets/go-svgrepo-com.svg"
@@ -159,7 +209,7 @@ const resources = [
     {
         name: "MySQL",
         url: "https://www.mysql.com/",
-        desc: "Hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) mã nguồn mở phổ biến nhất.",
+        desc: "Hệ quản trị CSDL quan hệ (RDBMS) mã nguồn mở phổ biến nhất cho các ứng dụng web.",
         category: "database",
         icon: "fa-solid fa-database",
         logoUrl: "assets/mysql-icon.svg"
@@ -175,18 +225,18 @@ const resources = [
     {
         name: "MongoDB",
         url: "https://www.mongodb.com/",
-        desc: "Database NoSQL lưu trữ dạng JSON linh hoạt. (Cần tải icon)",
+        desc: "CSDL NoSQL lưu trữ dưới dạng document (JSON), cho phép mở rộng linh hoạt.",
         category: "database",
-        icon: "fa-brands fa-envira",
-        logoUrl: "assets/mongodb.svg" 
+        icon: "fa-solid fa-leaf",
+        logoUrl: "assets/mongodb-svgrepo-com.svg" 
     },
     {
         name: "Redis",
         url: "https://redis.io/",
-        desc: "In-memory database dùng để làm cache cực nhanh. (Cần tải icon)",
+        desc: "Hệ thống lưu trữ dữ liệu trên RAM, dùng để làm Cache tăng tốc độ ứng dụng tức thì.",
         category: "database",
-        icon: "fa-solid fa-server",
-        logoUrl: "assets/redis.svg"
+        icon: "fa-solid fa-bolt",
+        logoUrl: "assets/redis-svgrepo-com.svg"
     },
 
     // --- MOBILE ---
@@ -209,10 +259,10 @@ const resources = [
     {
         name: "Flutter",
         url: "https://flutter.dev/",
-        desc: "UI Toolkit của Google build app đẹp và mượt. (Cần tải icon)",
+        desc: "UI Toolkit của Google build app đẹp và mượt. ",
         category: "mobile",
         icon: "fa-brands fa-google",
-        logoUrl: "assets/flutter.svg"
+        logoUrl: "assets/flutter-svgrepo-com.svg"
     },
 
     // --- DEVOPS & INFRA ---
@@ -232,10 +282,10 @@ const resources = [
         icon: "fa-brands fa-github",
         logoUrl: "assets/github-svgrepo-com.svg"
     },
-    {
+   {
         name: "Docker",
         url: "https://www.docker.com/",
-        desc: "Đóng gói ứng dụng vào container để chạy mọi nơi.",
+        desc: "Công nghệ Container hóa giúp đóng gói và vận hành ứng dụng đồng nhất trên mọi môi trường.",
         category: "devops",
         icon: "fa-brands fa-docker",
         logoUrl: "assets/docker-svgrepo-com.svg"
@@ -243,18 +293,18 @@ const resources = [
     {
         name: "Linux",
         url: "https://www.linux.org/",
-        desc: "Hệ điều hành mã nguồn mở, nền tảng của server. (Cần tải icon)",
+        desc: "Hệ điều hành mã nguồn mở, nền tảng của server.",
         category: "devops",
         icon: "fa-brands fa-linux",
-        logoUrl: "assets/linux.svg"
+        logoUrl: "assets/linux-svgrepo-com.svg"
     },
     {
         name: "AWS",
         url: "https://aws.amazon.com/",
-        desc: "Nền tảng điện toán đám mây lớn nhất thế giới. (Cần tải icon)",
+        desc: "Dịch vụ điện toán đám mây của Amazon với hàng trăm tính năng cho lưu trữ và máy chủ.",
         category: "devops",
         icon: "fa-brands fa-aws",
-        logoUrl: "assets/aws.svg"
+        logoUrl: "assets/aws-svgrepo-com.svg",
     },
 
     // --- AI ---
@@ -274,14 +324,13 @@ const resources = [
         icon: "fa-solid fa-robot",
         logoUrl: "assets/claude-ai-icon.svg"
     },
-    {
+   {
         name: "Gemini",
         url: "https://gemini.google.com/",
-        desc: "AI đa phương thức mạnh mẽ từ Google.",
+        desc: "Mô hình ngôn ngữ lớn (LLM) đa phương thức mạnh mẽ nhất hiện nay từ Google.",
         category: "ai",
-        icon: "fa-brands fa-google",
-        logoUrl: "assets/google-gemini.svg" 
-        // LƯU Ý: Bạn cần tải file icon Gemini và đổi tên thành google-gemini.svg
+        icon: "fa-solid fa-sparkles",
+        logoUrl: "assets/google-gemini-icon.svg" 
     },
     {
         name: "Perplexity",
@@ -289,11 +338,17 @@ const resources = [
         desc: "Công cụ tìm kiếm thông tin thời gian thực bằng AI.",
         category: "ai",
         icon: "fa-solid fa-magnifying-glass",
-        logoUrl: "assets/perplexity.svg"
-        // LƯU Ý: Bạn cần tải file icon Perplexity và đổi tên thành perplexity.svg
+        logoUrl: "assets/perplexity-ai-icon.svg"
     },
-
-    // --- IDE & TOOLS ---
+    {
+        name:"Google AI studio",
+        url: "https://cloud.google.com/ai-platform",
+        desc:"Google AI Studio là một môi trường phát triển tích hợp (IDE) dựa trên web. Nó cho phép các nhà phát triển nhanh chóng xây dựng và thử nghiệm các mô hình ngôn ngữ lớn (LLMs) từ gia đình Gemini của Google.",
+        category: "ai",
+        icon: "fa-brands fa-google",
+        logoUrl: "assets/google-ai-studio-icon.svg"
+     },
+// --- IDE & TOOLS ---
     {
         name: "Visual Studio Code",
         url: "https://code.visualstudio.com/",
@@ -305,7 +360,7 @@ const resources = [
     {
         name: "Cursor AI",
         url: "https://cursor.sh/",
-        desc: "Editor tích hợp AI, giúp code nhanh gấp đôi VS Code.",
+        desc: "Trình soạn thảo mã nguồn tích hợp AI sâu, có khả năng hiểu toàn bộ dự án của bạn.",
         category: "ide",
         icon: "fa-solid fa-robot",
         logoUrl: "assets/cursor-ai-code-icon.svg"
@@ -398,14 +453,24 @@ const resources = [
         icon: "fa-solid fa-file-code",
         logoUrl: "assets/icons8-notepad++.svg"
     },
+    // API TEST//
     {
         name: "Postman",
         url: "https://www.postman.com/",
-        desc: "Công cụ test API phổ biến nhất. (Cần tải icon)",
+        desc: "Công cụ test API phổ biến nhất.",
         category: "ide",
         icon: "fa-solid fa-paper-plane",
-        logoUrl: "assets/postman.svg"
-    }
+        logoUrl: "assets/postman-icon-svgrepo-com.svg"
+    },
+    // UI/UX designs
+    {
+        name: "Figma",
+        url: "https://www.figma.com/",
+        desc: "Công cụ thiết kế UI/UX trên trình duyệt, tiêu chuẩn vàng cho sự cộng tác thiết kế.",
+        category: "ide",
+        icon: "fa-brands fa-figma",
+        logoUrl: "assets/figma-svgrepo-com.svg"
+    },
 ];
 // Hàm khởi tạo nội dung sách
 function initBookContent() {
@@ -492,4 +557,5 @@ function createResourceHTML(item) {
 document.addEventListener('DOMContentLoaded', () => {
     initBookContent();
 });
+
 
